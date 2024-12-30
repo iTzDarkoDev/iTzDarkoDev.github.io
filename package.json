@@ -1,0 +1,22 @@
+{
+  "name": "stress_test",
+  "version": "1.0.0",
+  "description": "Aplicación para realizar pruebas de estrés en servidores.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "stress",
+    "test",
+    "server",
+    "attack"
+  ],
+  "author": "Darko",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "raw-socket": "^2.0.0"
+  }
+}
