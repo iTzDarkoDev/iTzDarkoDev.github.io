@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas de Estrés</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pruebas de Estrés del Servidor</h1>
+        <form id="attackForm">
+            <input type="text" id="ip" placeholder="IP del servidor" required>
+            <input type="number" id="port" placeholder="Puerto" required>
+            <input type="number" id="duration" placeholder="Duración (segundos)" required>
+            <input type="number" id="requestsPerSecond" placeholder="Solicitudes por segundo" required>
+            <select id="method">
+                <option value="TCP SYN Flood">TCP SYN Flood</option>
+                <option value="UDP Flood">UDP Flood</option>
+                <option value="TCP ACK Flood">TCP ACK Flood</option>
+                <option value="HTTP GET Flood">HTTP GET Flood</option>
+                <option value="HTTP POST Flood">HTTP POST Flood</option>
+                <option value="HTTP HEAD Flood">HTTP HEAD Flood</option>
+                <option value="HTTP PUT Flood">HTTP PUT Flood</option>
+                <option value="HTTP DELETE Flood">HTTP DELETE Flood</option>
+                <option value="HTTP OPTIONS Flood">HTTP OPTIONS Flood</option>
+                <option value="HTTP TRACE Flood">HTTP TRACE Flood</option>
+                <option value="HTTP PATCH Flood">HTTP PATCH Flood</option>
+            </select>
+            <button type="submit">Iniciar Ataque</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
